@@ -1,14 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Welcome to Metal Digs 5000 </title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link rel="stylesheet" href="/assets/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js" integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <style>
+        #sidebar {
+          overflow-y: scroll;
+          height: calc(100vh - 80px);
+        }
+      </style>
+   </head>
+   <body class="is-fluid is-full-hd">
+    <header class="has-text-centered column is-fixed-top"> 
+      <h1 class="is-size-1">Welcome to Metal Digs 5000!
+      </h1>
+      <form class="column is one-third field has-addons" id="search">
+        <div class="control">
+          <input class="input" type="text" id="search-input" placeholder="Search for a band">
+        </div>
+        <div class="control">
+          <button class="button is-info" id="search-button">
+            Search!
+          </button>
+        </div>
+      </form>
+    </header>
+    
+    <main class="columns is-fullheight">
+      <div class="column is-one-third">
+        <div id="sidebar" class="column is-6 is-narrow-mobile is-fullheight section is-hidden-touch">
+          <div id="metalArchivesResults"></div>
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>METAL SEARCH<title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="index.js"></script>
-  </body>
+        </div>
+      </div>
+      <section class="<column is-one-third">
+        <div id="cardContainer"></div>
+      </section>
+    </main>
+    <footer>This website uses : Metal Archives API | Created by Jesse Hudak on 2/08/2023 </footer>
+    <script src="assets\script.js"></script> 
+   </body>
 </html>
-
